@@ -1,0 +1,13 @@
+//WAP to display the numbers present in an array
+class Display_Array 
+{
+	public static void main(String[] args) 
+	{
+		int a[]={6,8,99,3,6,24};
+		for(int i=0;i<a.length;i++)
+		{
+		System.out.println(a[i]);
+		}
+		
+	}
+}
