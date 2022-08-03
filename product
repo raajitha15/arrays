@@ -1,0 +1,13 @@
+//product of array
+class Product_Array 
+{
+	public static void main(String[] args) 
+	{
+		int a[]={10,60},product=1;
+		for(int i=0;i<a.length;i++)
+		{
+			product=product*a[i];
+		System.out.println(product);
+		}
+	}
+}
