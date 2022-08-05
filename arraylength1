@@ -1,0 +1,17 @@
+/*can we have an array with no element? if yes then what will be the size of array
+answer: yes we can have an array with no element its size will be 0
+
+what will be the value present in the array?is it 0?five reasons to justify?
+Ans:no,value will be present in the given below array
+its no 0
+because we have not used 'new' for the given array.*/
+class ArrayLength1 
+{
+	public static void main(String[] args) 
+	{
+		int arr[]={};
+		int n=arr.length;
+		System.out.println("length of the array is: "+n);
+		//System.out.println(arr[0]);
+	}
+}
