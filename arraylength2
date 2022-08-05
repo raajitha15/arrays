@@ -1,0 +1,15 @@
+/*can we have an empty array which is created using new?
+ans:Yes
+
+what will be the value stored in the cell of above array when we dont initialize it?
+ans:default value 0 will be stored in the cells of the given array
+because we have used new keyword and the datatype i.e used to create the array is int and we know that default value for int is:0*/
+class ArrayLength3 
+{
+	public static void main(String[] args) 
+	{
+		int arr[]=new int[5];
+		int n=arr.length;
+		System.out.println("length of the array is : "+n);
+	}
+}
