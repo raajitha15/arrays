@@ -1,0 +1,15 @@
+/*length: it is used to get the number of elements present in array or we can say length is used to get the size of an array*/
+//program to demostrate how to count the number of elements present in array
+class ArrayLength 
+{
+	public static void main(String[] args) 
+	{
+		int arr[]={10,20,30,40};//array declared and elements are assigned to array
+		int arraylength=arr.length;//getting the size of array
+		System.out.println("the no.of elements in an array is: "+arr.length);
+		for(int i=0;i<arraylength;i++)//fetching the elements present in array
+		{
+		System.out.println("value present in arr [ "+i+" ] is : "+arr[i]);
+		}
+	}
+}
