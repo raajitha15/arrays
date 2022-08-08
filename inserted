@@ -1,0 +1,40 @@
+import java.util.Scanner;
+class Inserted_Array1 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the array size");
+		int size=sc.nextInt();
+		int arr[]=new int[size];
+		System.out.println("enter the array elements");
+		for(int i=0;i<size;i++)
+		{
+			arr[i]=sc.nextInt();
+		}
+		System.out.println("enter the array element");
+		int ele=sc.nextInt();
+		System.out.println("enter insertion position");
+		int pos=sc.nextInt();
+		int index=pos-1;
+		int res[]=new int[arr.length+1];
+		int k=0;
+		for(int i=0;i<res.length;i++)
+		{
+			if(i==index)
+			{
+				res[i]=ele;
+			}
+			else
+			{
+				res[i]=arr[k];
+				k++;
+			}
+		}
+		for(int i=0;i<res.length;i++)
+		{
+			System.out.println("inserted array are: "+res[i]);
+		}
+	
+	}
+}
