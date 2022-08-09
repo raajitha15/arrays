@@ -1,0 +1,43 @@
+//subtraction of two dimensional array
+import java.util.Scanner;
+class Sub_Two_Dimensional 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the row values");
+		int row=sc.nextInt();
+		System.out.println("enter the col values");
+		int col=sc.nextInt();
+		int a[][]=new int[row][col];
+		int b[][]=new int[row][col];
+		int diff[][]=new int[row][col];
+		System.out.println("enter the first array elements");
+		for(int i=0;i<row;i++)
+		{
+			for(int j=0;j<col;j++)
+			{
+				a[i][j]=sc.nextInt();
+			}
+		}
+		System.out.println("enter the second array elements");
+		for(int i=0;i<col;i++)
+		{
+			for(int j=0;j<col;j++)
+			{
+				b[i][j]=sc.nextInt();
+			}
+		}
+		
+		for(int i=0;i<row;i++)
+		{
+			for(int j=0;j<col;j++)
+			{
+				diff[i][j]=a[i][j]-b[i][j];
+				System.out.printf("%2d ",diff[i][j]);
+			}
+			System.out.println();
+		}
+
+	}
+}
