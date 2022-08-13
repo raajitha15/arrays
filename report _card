@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class ReportCard 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		int subject[]=new int[5];
+		int len=subject.length;
+		int totalsum=0;
+		double average;
+		System.out.println("enter marks of 5 subjects: ");
+		for(int i=0;i<len;i++)
+		{
+			subject[i]=sc.nextInt();
+		}
+		for(int i=0;i<len;i++)
+		{
+			totalsum=totalsum+subject[i];
+		}
+		average=totalsum/5.0;
+		for(int i=0;i<len;i++)
+		{
+			System.out.println("marks scored in subject["+i+"] is: "+subject[i]);
+		}
+		System.out.println("the total marks secured is: "+totalsum);
+		System.out.println("average marks scored: "+average);
+	}
+}
